@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --primary-dark: #005f3c;;
+    --primary-light:#009761;
+
+}
+
+
+@layer base {
+    html {
+        @apply scroll-smooth
+    }
+
+    body {
+        @apply font-[poppins]
+    }
+
+  #nav li {
+        @apply p-4 text-base hover:text-[var(--primary-light)] ease-in duration-300
+    }
+
+  button {
+        @apply px-4 py-2  rounded-full hover:bg-[var(--primary-dark)] bg-[var(--primary-light)] ease-in duration-300 text-white
+    }
+h3{
+    @apply text-2xl font-bold 
+}
+   
+.card:hover h3{
+    @apply text-[var(--primary-light)] ease-in duration-300
+}
+.card:hover {
+    @apply translate-y-[-10px] border-b-8 border-b-[var(--primary-light)]  ease-in-out duration-500
+}
+
+    
+
+
+
+
+
+
+}
